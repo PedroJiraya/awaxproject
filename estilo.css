@@ -20,6 +20,7 @@ header{
     height: inherit;
     margin: auto;
     display: flex;
+
     align-items: center;
 }
 
@@ -318,6 +319,62 @@ header{
 }
 
 
+.default.dark.bg-team{
+    background-image: url('complementos/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+.section-team{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
 
 
+}
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px ;
+    padding-bottom: 50px;
+}
 
+.section-team .sliders{
+    width:1000dvw ;
+    height: 100%;
+}
+.section-team .slide{
+    width:280px ;
+    height: 100%;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 20px;
+    min-height: 300px;
+}
+.section-team .slidearea{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-team-area .sliders-pointers{
+    height: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-team-area .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ba8c58;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.section-team-area .active{
+    background-color: #ba8c58;
+}
