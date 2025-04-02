@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+
+}
+.header{
+    max-width: 1140px;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logoimg img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo{
+    width: 80px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #000;
+    
+}
+.menu li a:hover, .menu .active a{
+    border-bottom: 5px solid #ba8c58;
+    color: #ccc;
+}
+
+
+.banner{
+    height: calc(100dvh - 100px);
+    background-color: #6b6b6b;
+    background-image: url('complementos/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+.banner .sliders{
+    width:1000dvw ;
+    height: 100%;
+}
+.banner .slide{
+    width:100dvw ;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .slidearea{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner span{
+    color: #ba8c58
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.button{
+    display: inline-block;
+    background-color: #ba8c58;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+
+}
+.button:hover{
+    box-shadow: 1px 0px 5px #ba8c58;
+}
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ba8c58;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.banner .active{
+    background-color: #ba8c58;
+}
+
+.default{
+    width: 100dvw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title{
+    font-size:20px;
+}
+.default .section-desc{
+    font-size: 16px;
+    color: #ada5a5;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.default .section-body{
+    margin: auto;
+    max-width: 1140px;
+    min-height: 200px;
+}
+.default.light{
+    background-color: #f7f7f7;
+}
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+
+}
+.default.dark{
+    background-color: #000;
+}
+.default.dark .section-title,
+.default.dark .section-body{
+    color: #fff;
+}
+
+
+
+
+
+/* CSS DE AREAS ESPEFICICAS */
+
+.section-aboutus{
+    display: flex;
+
+}
+
+.section-aboutus--left{
+    flex: 1;
+    padding-right: 30px;
+}
+.section-aboutus--left p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.section-aboutus--right{
+    width: 450px;
+}
+.section-aboutus--right img{
+    width: inherit;
+    box-shadow: 1px 2px 10px #333 ;
+}
+
+
+.section-services{
+    display: flex;
+
+}
+.section-service{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+.section-service:first-child{
+    border-left: 1px solid #333;
+}
+.section-service h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.section-service p{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.section-projects--filters {
+    border: 1px solid #ccc;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+
+.section-projects--filters ul,
+.section-projects--filters li{
+    list-style: none;
+}
+.section-projects--filters li{
+    display: inline-block;
+    border-right: 1px solid #ccc; 
+    border-bottom: 3px solid #eee;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 20px;
+    color: #555;
+
+}
+.section-projects--filters li:hover,
+.section-projects--filters .active{
+    border-bottom: 3px solid #ba8c58;
+    cursor: pointer;
+}
+
+.section-projects--filters li:last-child{
+    border-right: 1px solid #eee;
+}
+
+.section-projects--photos{
+    width: 100dvw;
+    max-width: 1140px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.section-projects--photo{
+    width: 280px;
+
+}
+.section-projects--photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.section-projects--photoarea img{
+    width: inherit;
+    height: inherit;
+}
+.section-projects--photoinfo{
+    color: #fff;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-projects--photoinfo h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    display: flex;
+}
+
+
+
+
+
