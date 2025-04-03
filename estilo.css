@@ -631,3 +631,10 @@ footer {
     width: 20px;
     height: auto;
 }
+.tributo{
+    text-align: center;
+    margin-top: 20px;
+    color:#fff;
+    border-top: 2px solid #ccc;
+    padding: 20px;
+}
