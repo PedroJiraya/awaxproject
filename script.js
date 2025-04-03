@@ -27,3 +27,13 @@ function clicou(){
         
     };
 }
+document.querySelector('.menu-opener').addEventListener('click', abrirmenu)
+let nav = document.querySelector('#nav')
+
+function abrirmenu(){
+    if (nav.style.display = 'none'){
+        nav.style.display = 'block'
+    }else if(nav.style.display = 'block'){
+        nav.style.display = 'none'
+    }
+};
