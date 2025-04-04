@@ -19,13 +19,8 @@ function changeSlide(event){
 document.querySelector('.button.one').addEventListener('click', clicou)
 function clicou(){
     
-    let tempo = 2
-    while(tempo > 0){
-        tempo = tempo -1
-        alert('voce ativou uma bomba ' + tempo) 
+alert('voce clicou em um botao')
 
-        
-    };
 }
 document.querySelector('.menu-opener').addEventListener('click', abrirmenu)
 let nav = document.querySelector('#nav')
