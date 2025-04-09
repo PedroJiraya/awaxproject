@@ -44,8 +44,8 @@ O **Awax Project** é uma iniciativa acadêmica que busca explorar e aplicar con
 
 Aqui está uma prévia do que você encontrará:
 
-![![image](https://github.com/user-attachments/assets/055a3afb-da04-436d-a2a0-c960b49f35e9)
-)  
+![image](https://github.com/user-attachments/assets/055a3afb-da04-436d-a2a0-c960b49f35e9)
+  
 
 ---
 
